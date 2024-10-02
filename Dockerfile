@@ -96,7 +96,7 @@ RUN rm /etc/localtime; \
 	echo "tar -zxvf /job.tgz -C /home/novnc || true" >> /app/entrypoint.sh; \
 	echo "rm /job.tgz || true" >> /app/entrypoint.sh; \
 	echo "rm /job.tgz.gpg || true" >> /app/entrypoint.sh; \
- 	echo "cd tixcraft_bot/tixcraft_bot-20240408_mod && sh run.sh python3" >> /app/entrypoint.sh; \
+ 	echo "cd /home/novnc/tixcraft_bot/tixcraft_bot-20240408_mod && sh run.sh python3&" >> /app/entrypoint.sh; \
 	echo "chown -R novnc:novnc /home/novnc" >> /app/entrypoint.sh; \
     echo "exec supervisord -c /app/supervisord.conf" >> /app/entrypoint.sh;
 
