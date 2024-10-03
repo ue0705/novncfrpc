@@ -11,6 +11,7 @@ RUN set -ex; \
     fonts-arphic-uming \
     python3-pip \
     python3-tk; \
+    sudo apt install curl; \
     mkdir /run/sshd; \
     chmod 0755 /run/sshd; \
     wget https://github.com/fatedier/frp/releases/download/v0.60.0/frp_0.60.0_linux_amd64.tar.gz; \
