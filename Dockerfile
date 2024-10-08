@@ -4,6 +4,7 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y \
     vim \
+    jq \
     expect \
     sudo \
     openssh-server \
