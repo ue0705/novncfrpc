@@ -1,4 +1,4 @@
-FROM theasp/novnc
+FROM theasp/novnc:latest
 
 RUN set -ex; \
     apt-get update; \
